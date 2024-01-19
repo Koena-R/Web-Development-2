@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+fieldset{
+    padding: 2rem;
+}
+label,input{
+    display:block;
+    font:inherit;
+    margin-top:1rem;
+    padding:0.5rem
+}
+input:last-child{
+    margin-top: 2rem;
+}
+ul{
+    display:flex;
+    list-style-position: inside;
+}
+li{
+    padding:1rem;
+}
+
+

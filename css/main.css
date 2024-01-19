@@ -1,0 +1,185 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color:rgb(0, 105, 0);
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#header{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding:.5rem 1rem;
+    position:fixed;
+    top:0;
+    background-color: white;
+    border-bottom: 2px solid gray;
+    height:60px;
+    width:100%;
+}
+#header div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#login{
+    color:gray;
+}
+#logo{
+    color:var(--main-color);
+}
+#sign-up{
+    background-color:var(--main-color);
+    padding:.7rem 1.5rem;
+    border-radius: 10px;
+}
+#landing{
+    height:100vh;
+    display: grid;
+    padding:60px 2rem 1rem;
+    place-content: center;
+}
+
+#service, #footer{
+    padding:2rem 1rem    
+}
+#landing h1{
+    color:var(--main-color);
+    font-size: 3em;
+    font-family: sans-serif;
+}
+#landing p{
+    font-size:1.3rem;
+    color:gray;
+}
+#get-started{
+    background-color: var(--main-color);
+    width:fit-content;
+    padding: 1rem;
+    margin-top:1rem;
+    border-radius: 10px;
+}
+#service{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1rem;
+    width:100%;
+    justify-content: center;
+}
+#link-block{
+    display: block;
+    width: min(360px,100%);
+}
+#link-block:hover{
+    text-decoration: none;
+}
+.card-1{
+    color:white;
+    width:min(360px , 100%);
+    background-color: var(--main-color);
+    padding: 1rem;
+    margin-top:1rem;
+    border-radius: 10px;
+}
+.card-1:hover{
+    background-color: white;
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.card-1 div{
+    display: flex;
+    width:fit-content;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+}
+.card-1 h3{
+    margin-top: .5rem;
+}
+.card-1 div p{
+    color:inherit;
+    font-size: .9rem;
+}
+.right-arr{
+    width:1.3rem;
+    height: 1.3rem;
+}
+#footer{
+    margin:1rem;
+    color:white;
+    background-color: rgb(0, 43, 0);
+    border-radius: 10px;
+
+}
+.hover-drop{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:1rem 0;
+}
+.footer-drop-content{
+    display: none;
+    flex-direction: column;
+    margin: 1rem 0;
+    transition: 5s;
+    height:0;
+}
+.footer-drop-content a{
+    margin:.5rem 0;
+    text-indent: 1rem;
+}
+.footer-drop:hover .footer-drop-content{
+    display: flex;
+    height:fit-content;
+}
+#follow{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    margin: 3rem 0;
+    align-items: center;
+}
+#follow hr{
+    width:100%;
+}
+#social-links{
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+#social-links a svg{
+    width:3rem;
+    height:3rem;
+    border:1px solid white;
+    padding:.7rem;
+    margin-right: 0.5rem; 
+    border-radius: 10px;
+}
+#last{
+    display: flex;
+    flex-direction:column;
+    gap:2rem;
+    align-items: center;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
