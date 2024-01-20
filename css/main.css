@@ -18,7 +18,7 @@ body{
     flex-wrap: nowrap;
     justify-content: space-between;
     padding:.5rem 1rem;
-    position:fixed;
+    position:sticky;
     top:0;
     background-color: white;
     border-bottom: 2px solid gray;
@@ -45,7 +45,7 @@ body{
     border-radius: 7000px;
 }
 #landing{
-    height:100vh;
+    min-height:100vh;
     display: grid;
     padding:60px 2rem 1rem;
     place-content: center;
