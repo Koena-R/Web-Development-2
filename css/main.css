@@ -42,18 +42,21 @@ body{
 #sign-up{
     background-color:var(--main-color);
     padding:.7rem 1.5rem;
-    border-radius: 10px;
+    border-radius: 7000px;
 }
 #landing{
     height:100vh;
     display: grid;
     padding:60px 2rem 1rem;
     place-content: center;
+
+}
+#landing-content{
+    background-color:rgba(240, 255, 255, 0.719);
+    padding:1rem;
+    border-radius: 15px;
 }
 
-#service, #footer{
-    padding:2rem 1rem    
-}
 #landing h1{
     color:var(--main-color);
     font-size: 3em;
@@ -61,14 +64,32 @@ body{
 }
 #landing p{
     font-size:1.3rem;
-    color:gray;
+    color:rgb(68, 68, 68);
 }
 #get-started{
     background-color: var(--main-color);
     width:fit-content;
     padding: 1rem;
     margin-top:1rem;
-    border-radius: 10px;
+    border-radius: 7000px;
+}
+#workspace,#team{
+    padding:5vw;
+}
+#workspace img,#team img{
+    display:block;
+    width:100%;
+    max-width:1000px;
+    height:auto;
+    margin:auto;
+}
+#service, #footer{
+    padding:2rem 1rem    
+}
+#team h2{
+    text-align: center;
+    color: rgb(71, 71, 71);
+    padding:1rem;
 }
 #service{
     display:flex;
@@ -118,6 +139,7 @@ body{
     width:1.3rem;
     height: 1.3rem;
 }
+
 #footer{
     margin:1rem;
     color:white;
@@ -132,11 +154,17 @@ body{
     align-items: center;
     margin:1rem 0;
 }
+.hover-drop svg{
+    transition: .4s;
+}
+.footer-drop:hover .hover-drop svg{
+    transform:rotate(-180deg);
+}
 .footer-drop-content{
     display: none;
     flex-direction: column;
     margin: 1rem 0;
-    transition: 5s;
+    transition: height 5s;
     height:0;
 }
 .footer-drop-content a{
